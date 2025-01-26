@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+}
+.Main {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border-top-left-radius:9px;
+    border: 15px solid #262626;
+    background-color:#262626 ;
+    color:white;
+    height: 25px;
+}
+input {
+    background-color: greenyellow;
+   height: 35px;
+   border-radius: 8px;
+   border: solid;
+} 
+.menu {
+   
+    display:flex;
+    align-items: center;
+    color:green;
+}
+.menu-logo {
+    width:150px; 
+    height:100px;
+}
+
+.logo {
+   
+    width: 120px;
+    height: 50px;
+}
+
+.anchor-container{
+    display:flex;
+    gap: 30px;
+}
+a{
+    position:relative;
+    
+}
+a::before{
+    content:'';
+    position:absolute;
+    top:-32px;
+    left: 0px;
+    right:0px;
+    bottom: 0px;
+    background:green;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transform-origin:bottom left;
+    transition:transform 0.1s ease-in-out;
+   
+}
+a:hover::before {
+    transform:scaleX(1);
+
+}
+a:hover{
+    color: green;
+   
+}
+
+.anchor {
+    text-decoration:none;
+    font-weight:bold;
+    color:black;
+}   
+   
+.flower {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    height: 80px;
+    box-shadow: 2px 1px 2px;
+}
+.green{
+    color:green;
+}
+.now{
+   border:10px solid black;
+   border-radius: 0px;
+   padding: 5px 10px;
+    color:white;
+    background-color: black;
+    height: 60px;
+    width: 140px;
+    margin-left: 350px;
+}
+
+     
+
+.text-group {
+    margin-left: 350px;
+    margin-top: 90px;
+    
+}
+.text{
+    font-size: 60px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+      }
+
+.green{
+    font-size:  65px;
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.clamp{
+    overflow:hidden;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
+    line-clamp:3;
+    width: 700px;
+    margin-left: 350px;
+    font-size:20px;
+
+}
+.left{
+    flex-direction: column;
+    display:flex;
+    gap: 40px;
+    
+}
+
+
+
+.picture-container{
+    display:flex;
+    justify-content: space-evenly;
+}
+.green-leaf{
+    margin-right: 300px;
+}
+
+
+
+
+    
+ 
+
+   
+
+
+
+    
+    
+
+   
+   
