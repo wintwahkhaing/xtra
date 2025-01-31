@@ -93,6 +93,8 @@ a:hover{
     height: 60px;
     width: 140px;
     margin-left: 350px;
+    animation:slideInright 2s  ease-in-out;
+    transform:translateY(-5px); 
 }
 
      
@@ -102,20 +104,39 @@ a:hover{
     margin-top: 90px;
     
 }
+
+@keyframes slideInleft{
+    from{
+        transform:translateX(100px);
+        
+        }
+        to{
+            transform:translateX(-1px);
+        }
+    }
+
 .text{
     font-size: 60px;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    animation:slideInleft 1.5s ease-in-out ;
+    transform:translateX(-1px);
+
 }
+
+
  
 .green{
     font-size:  65px;
+    color:green;
     font-family: "Roboto Slab", serif;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    animation:slideInleft 2s ease-in-out;
+     transform:translateX(-1px);
 }
 .clamp{
     overflow:hidden;
@@ -126,13 +147,24 @@ a:hover{
     width: 700px;
     margin-left: 350px;
     font-size:20px;
+    animation:slideInright 2.5                                                                                  s ease-in-out;
+    transform:translateY(-5px);
 
+}
+@keyframes slideInright{
+    from{
+        transform:translateY(100px);
+    }
+    to{
+        transform:translateY(-5px);
+    }
 }
 .left{
     flex-direction: column;
     display:flex;
+    align-items: flex-start;
     gap: 40px;
-    
+    /* background-color: pink; */
 }
 
 
@@ -143,6 +175,19 @@ a:hover{
 }
 .green-leaf{
     margin-right: 300px;
+    animation: slideImage 0.5s ease-in-out;
+    transform:translateY(0px);
+}
+@keyframes slideImage{
+from{
+    transform:translateY(200px);
+}
+to{
+    transform:translateY(0px);
+}
+}
+.right{
+    /* background-color: red; */
 }
 
 
